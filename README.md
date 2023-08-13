@@ -69,13 +69,6 @@ After seeing another users Go based botnet i wanted to do more work on my GoBot,
 *   Disable/Enable (TaskManger, RedEdit, Command Prompt)
 *   File Dropper (Place evedence on pc with no traces where it came from /w dir selection)
 
-# Some Info about the C&C
-
-The C&C is a program, You can compile it for Windows, Linux, Mac systems. Its a self-running web-server that handles all connections on the selected port in the settings. it will serve the HTLM C&C to a connector if you allow it and it saves data about account, bots and commands as a SQL database and bots files (screenshots, keylogs, ect) as file under the bots own "Profile"  
-You can control the botnet from the program(more secure) or control it from the HTML C&C. The C&C's program is extremely stable, Go based servers are know for handling millions or requests at once without fail, just make sure you have a good connection.  
-The C&C has a build in hard-coded login (kinda like a Backdoor) you can use if you 'forgot' the account login. the C&C can have any number of accounts.  
-With it being a self-contained program this removes the issue of SQLi attacks on the C&C so its more SECURE.  
-The C&C can also run inside a Tor Hidden service if configured right and the client (bot) can connect to it using a onion.to or onion.cab forwarder if needed. Tor can also be used by the bot via a SOCKS proxy... Simple to do, Google it.
 
 # How to Build and Use
 
@@ -106,81 +99,9 @@ It not really a Obfuscator all it does it move the Char +1 to and A = B, C = D, 
 *   github.com/atotto/clipboard
 *   github.com/StackExchange/wmi
 
-# Images
-
-*   http://prnt.sc/d67nh5
-*   http://prnt.sc/d67ogh
-*   http://prnt.sc/d67oqh
-*   http://prnt.sc/d6esj3
-
-# Credits and Stuff
-
-*   https://github.com/decred/gominer
-*   https://github.com/robvanmieghem/gominer
-*   https://astaxie.gitbooks.io/build-web-application-with-golang/content/en/04.5.html
-*   http://www.adlice.com/runpe-hide-code-behind-legit-process/
-*   http://www.hacking-tutorial.com/tips-and-trick/how-to-enable-remote-desktop-using-command-prompt/
-*   https://enigma0x3.net/2016/08/15/fileless-uac-bypass-using-eventvwr-exe-and-registry-hijacking/
-*   https://mholt.github.io/json-to-go/
-*   https://sentinelone.com/blogs/anti-vm-tricks/
-*   http://hackforums.net/showthread.php?tid=5383448
-*   https://github.com/grafov/hulk
-*   https://github.com/nhooyr/dos
-*   https://github.com/marcelki/sockstress
-*   https://github.com/ammario/ssynflood
-*   https://github.com/matishsiao/goInfo/blob/master/goInfo_windows.go
-*   https://github.com/iamacarpet/go-win64api
-*   https://github.com/oneumyvakin/initme/blob/master/windows.go
-*   https://github.com/LOLSquad/DDoS-Scripts
-*   https://github.com/vbooter/DDoS-Scripts
-*   https://github.com/natefinch/pie
-*   https://www.windows-commandline.com/enable-remote-desktop-command-line/
-*   https://www.socketloop.com/tutorials/golang-secure-tls-connection-between-server-and-client
-*   https://github.com/lextoumbourou/goodhosts
-*   https://github.com/YinAndYangSecurityAwareness/dreamr-botnet
-*   https://github.com/mauri870/ransomware
-*   http://www.devdungeon.com/content/making-tor-http-requests-go
-*   http://www.darul.io/post/2015-07-22_go-lang-simple-reverse-proxy
-*   https://github.com/mauri870/powershell-reverse-http
-*   https://github.com/gh0std4ncer/lizkebab/blob/master/client.c
-*   https://github.com/EgeBalci/EGESPLOIT
-*   https://github.com/EgeBalci/HERCULES
-*   https://github.com/andrewaeva/gobotnet
-*   https://github.com/SaturnsVoid/GoBot
-*   https://github.com/petercunha/GoAT
-*   https://github.com/huin/goupnp
-*   https://github.com/ytisf/theZoo/tree/master/malwares/Source/Original
-*   https://github.com/malwares/Remote-Access-Trojan
-*   https://github.com/kardianos/service
-*   https://github.com/vova616/screenshot/blob/master/screenshot_windows.go
-*   http://hackforums.net/showthread.php?tid=5040543
-*   http://www.calhoun.io/5-useful-ways-to-use-closures-in-go/
-*   https://blogs.technet.microsoft.com/ilikesql_by_dandyman/2013/03/10/how-to-install-a-msi-file-unattended/
-*   https://github.com/tadzik/simpleaes
-*   https://guitmz.com/win32-liora-b/
-*   https://github.com/rk/go-cron
-*   https://breakingmalware.com/vulnerabilities/elastic-boundaries-elevating-privileges-by-environment-variables-expansion/
-*   https://breakingmalware.com/malware/ardbot-a-malware-under-construction/
-*   https://breakingmalware.com/malware/furtim-malware-avoids-mass-infection/
-*   https://www.pugetsystems.com/labs/support-software/How-to-disable-Sleep-Mode-or-Hibernation-793/
-*   https://files.sans.org/summit/Digital_Forensics_and_Incident_Response_Summit_2015/PDFs/TheresSomethingAboutWMIDevonKerr.pdf
-*   https://github.com/jasonlvhit/gocron
 
 # Other
 
 Go is a amazing and powerful programming language. If you already haven't, check it out; https://golang.org/
 
-# Donations
 
-![](https://blockchain.info/Resources/buttons/donate_64.png)
-
-Please Donate To Bitcoin Address: **1AEbR1utjaYu3SGtBKZCLJMRR5RS7Bp7eE**
-
-# News
-
-I just read a article on Bleeping Computer, https://www.bleepingcomputer.com/news/security/backdoored-torrents-infect-movie-tv-fans-with-gobot2-malware/ Seems someone has found a use for this project... I have no involvment with this group or person. I have nothing more to say on this matter.
-
-\-Crab Crab  
-\----------Update Log---------------------
-
-03/15/2017: Intial Upload...
